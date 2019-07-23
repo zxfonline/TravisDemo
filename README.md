@@ -16,25 +16,25 @@
 
 新建 Travis CI 配置文件 .travis.yml 文件。
 
-language: bash
+     language: bash
 
-dist: xenial
+     dist: xenial
 
-services:
-  - docker
+     services:
+       - docker
 
-before_script:
-  # 登录到 docker hub
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+     before_script:
+       # 登录到 docker hub
+       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
-script:
-  # 这里编写测试代码的命令
-  - echo "test code"
+     script:
+       # 这里编写测试代码的命令
+       - echo "test code"
 
-after_success:
-  # 当代码测试通过后执行的命令
-  - docker build -t zxfonline/travisdemo .
-  - docker push zxfonline/travisdemo
+     after_success:
+       # 当代码测试通过后执行的命令
+       - docker build -t zxfonline/travisdemo .
+       - docker push zxfonline/travisdemo
 
 ## 请提前在 Travis CI 仓库设置页面配置 DOCKER_PASSWORD DOCKER_USERNAME 变量
 
