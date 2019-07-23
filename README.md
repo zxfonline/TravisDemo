@@ -36,7 +36,7 @@
        - docker build -t zxfonline/travisdemo .
        - docker push zxfonline/travisdemo
 
-## 请提前在 Travis CI 仓库设置页面配置 DOCKER_PASSWORD DOCKER_USERNAME 变量
+请提前在 Travis CI 仓库设置页面配置 DOCKER_PASSWORD DOCKER_USERNAME 变量
 
 # 查看结果
-将项目推送到 GitHub, 登录 Travis CI 查看构建详情。
+将项目推送到 GitHub, 登录 [Travis CI(https://travis-ci.com/) 查看构建详情。
