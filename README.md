@@ -1,5 +1,5 @@
 # 在 Travis CI 中使用 Docker
-[![Build Status](https://travis-ci.org/zxfonline/TravisDemo.svg)](https://travis-ci.org/zxfonline/TravisDemo)
+[![Build Status](https://travis-ci.com/zxfonline/TravisDemo.svg)](https://travis-ci.com/zxfonline/TravisDemo)
 
 当代码提交到 GitHub 时，Travis CI 会根据项目根目录 .travis.yml 文件设置的指令，执行一系列操作。
 
