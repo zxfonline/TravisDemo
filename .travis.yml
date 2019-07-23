@@ -15,5 +15,5 @@ script:
 
 after_success:
   # 当代码测试通过后执行的命令
-  - docker build -t zxfonline/alpine .
-  - docker push zxfonline/alpine
+  - docker build -t zxfonline/TravisDemo .
+  - docker push zxfonline/TravisDemo
